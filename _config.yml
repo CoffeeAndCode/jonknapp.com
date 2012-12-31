@@ -1,0 +1,7 @@
+auto: true
+exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
+future: false
+markdown: rdiscount
+paginate: 10
+permalink: /:year/:month/:title
+rdiscount extensions: [smart]
