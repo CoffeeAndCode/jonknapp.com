@@ -1,7 +1,11 @@
 auto: true
+defaults:
+    author: Jonathan Knapp
+description: The officially official website of Jonathan Knapp.
 exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
 future: false
 markdown: rdiscount
 paginate: 10
 permalink: /:year/:month/:title
 rdiscount extensions: [smart]
+url: jonknapp.com

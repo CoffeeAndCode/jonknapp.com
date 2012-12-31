@@ -12,6 +12,15 @@ title: Hello Jekyll
 * [Sample Project](https://github.com/CoffeeAndCode/jonknapp.com)
 * We will use Markdown using the "[rdiscount](https://github.com/rtomayko/rdiscount)" gem.
 * Posts will be in the format "http://url/year/month/title"
+* issues with gcc
+
+        $ which gcc
+        /usr/bin/gcc
+        $ sudo ln -s /usr/bin/gcc /usr/bin/gcc-4.2
+
+                        OR
+
+        https://github.com/kennethreitz/osx-gcc-installer
 
 
 ### Files
@@ -70,7 +79,7 @@ future posts. You can view future posts with `jekyll --server --future`.
 5. check out [http://0.0.0.0:4000](http://0.0.0.0:4000). It should show your `index.html` page along with a list of your individual posts in the `_posts` folder.
 
 
-## Making a Website
+## Making a Website // [code](https://github.com/CoffeeAndCode/jonknapp.com/commit/94d48eb143166c316ca04aa7aaea8215a2156510)
 
 Note: Sometimes, you will need to restart the local jekyll server if you
 add files that you want to be compiled when saved.  ex) main.css
@@ -80,3 +89,10 @@ add files that you want to be compiled when saved.  ex) main.css
 3. add your Google analytics tracking code
 4. add a `css/main.css` stylesheet
 5. add an `images` folder that you can use for your posts
+
+
+## RSS Feed
+
+1. add `rss.xml` to the application:
+
+2. add `defaults` section, `url`, and `description` to _config.yml
