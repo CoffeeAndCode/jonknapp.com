@@ -91,8 +91,15 @@ add files that you want to be compiled when saved.  ex) main.css
 5. add an `images` folder that you can use for your posts
 
 
-## RSS Feed
+## RSS Feed // [code](https://github.com/CoffeeAndCode/jonknapp.com/commit/2eff67bfdf7454b944cdbc60a3f7859474d24e3d)
 
 1. add `rss.xml` to the application:
 
 2. add `defaults` section, `url`, and `description` to _config.yml
+
+
+## Thinking Smarter
+
+1. create `_plugins` folder
+2. create plugin for a `default` liquid filter
+3. replace logic in rss.xml with new default filter

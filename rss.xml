@@ -18,7 +18,7 @@ layout: nil
         <title>{{ post.title }}</title>
         <link>http://{{ site.url }}{{ post.url }}</link>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
-        <author>{% if post.author %}{{ post.author }}{% else %}{{ site.defaults.author }}{% endif %}</author>
+        <author>{{ post.author | default: site.defaults.author }}</author>
         <guid>http://{{ site.url }}{{ post.url }}</guid>
         <description>{{ post.content | xml_escape }}</description>
       </item>
