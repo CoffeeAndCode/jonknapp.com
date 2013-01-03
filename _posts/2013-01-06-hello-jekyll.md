@@ -25,17 +25,12 @@ title: Hello Jekyll
 
 ### Files
 
-**.rvmrc**
-
-    rvm use 1.9.3@jonknapp.com --create
+{% gist 4439954 .rvmrc %}
 
 
 **Gemset**
 
-    source "http://rubygems.org"
-    gem "jekyll"
-    gem "rdiscount"
-
+{% gist 4439954 Gemset %}
 
 ## Project Setup // [code](https://github.com/CoffeeAndCode/jonknapp.com/commit/8a10319ae58dce3bfd13828d97bb1ea2e82cd0f8)
 
@@ -56,13 +51,8 @@ title: Hello Jekyll
         _site/
 
 2. add `_config`:
-        auto: true
-        exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
-        future: false
-        markdown: rdiscount
-        paginate: 10
-        permalink: /:year/:month/:title
-        rdiscount extensions: [smart]
+
+    {% gist 4439965 _config.yml %}
 
 3. create files/folders:
     * `_layouts` folder
@@ -103,3 +93,4 @@ add files that you want to be compiled when saved.  ex) main.css
 1. create `_plugins` folder
 2. create plugin for a `default` liquid filter
 3. replace logic in rss.xml with new default filter
+4. add `gist_tag` plugin: https://gist.github.com/803483#file-gist_tag-rb
