@@ -11,10 +11,25 @@
   </head>
   <body>
     <header>
-      <h1><a href="/">{{ page.title }}</a></h1>
+      <h1><a href="/">jonknapp.com</a></h1>
     </header>
-    <section>
-      {{ content }}
+
+    <section role="main">
+      <div class="content">
+        {{ content }}
+      </div>
+    </section>
+
+    <section class="about transition">
+      <img class="avatar" src="http://gravatar.com/avatar/c6caef08c5eb2951bee325de5df53def?s=160" height="160" width="160" />
+      <h1>Jonathan Knapp</h1>
+      <p class="title">Byte Architect @ <br />
+        <a href="http://coffeeandcode.com">Caffeinated Solutions</a></p>
+      <ul class="links">
+        <li><a href="https://github.com/coffeeandcode">Github</a></li>
+        <li><a href="https://twitter.com/coffeeandcode">Twitter</a></li>
+        <li><a href="/rss.xml">RSS</a></li>
+      </ul>
     </section>
   </body>
 </html>
