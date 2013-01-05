@@ -38,7 +38,7 @@ title: Hello Jekyll
 
 2. execute `.rvmrc` file
 
-    ![rvmrc command line example](/images{{ page.id }}/rvmrc-command-line.png)
+    {% image_path rvmrc-command-line.png "rvmrc command line example" %}
 
 3. install Bundler if needed: `gem install bundler`
 
