@@ -10,9 +10,11 @@
     <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/rss.xml"/>
   </head>
   <body>
+    {% if page.id %}
     <header>
-      <h1><a href="/">{{ site.url }}</a></h1>
+      <a href="/">&laquo; {{ site.url }}</a>
     </header>
+    {% endif %}
 
     <section role="main">
       <div class="content">
@@ -21,8 +23,8 @@
     </section>
 
     <section class="about transition">
-      <img class="avatar" src="http://gravatar.com/avatar/c6caef08c5eb2951bee325de5df53def?s=160" height="160" width="160" />
-      <h1>Jonathan Knapp</h1>
+      <img class="avatar" src="http://gravatar.com/avatar/c6caef08c5eb2951bee325de5df53def?s=140" height="140" width="140" />
+      <h1>Jon Knapp</h1>
       <p class="title">Byte Architect @ <br />
         <a href="http://coffeeandcode.com">Caffeinated Solutions</a></p>
       <ul class="links">
@@ -31,10 +33,5 @@
         <li><a href="/rss.xml">RSS</a></li>
       </ul>
     </section>
-
-    <footer class="transition">
-      <em>Brought to you by <a href="http://jekyllrb.com">Jekyll</a>,
-      <a href="http://aws.amazon.com">AWS</a>, and the shoulders of many other giants.</em>
-    </footer>
   </body>
 </html>

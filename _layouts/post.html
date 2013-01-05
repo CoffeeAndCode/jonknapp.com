@@ -7,5 +7,11 @@ layout: default
     <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
     <time>{{ page.date | date: "%B %Y" }}</time>
   </header>
+
   {{ content }}
+
+  <footer class="transition">
+    <em>Site built on <a href="http://jekyllrb.com">Jekyll</a>,
+    <a href="http://aws.amazon.com">AWS</a>, and the shoulders of many other giants.</em>
+  </footer>
 </article>
