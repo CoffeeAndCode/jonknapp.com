@@ -3,10 +3,6 @@ layout: post
 title: Hello Jekyll
 ---
 
-**WARNING: *This is a work in progress!* **
-
----
-
 ## Creating a Website with Jekyll
 
 * [Sample Project](https://github.com/CoffeeAndCode/jonknapp.com)
