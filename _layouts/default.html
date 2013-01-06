@@ -5,7 +5,9 @@
     <meta name="author" content="{{ page.author | default: site.defaults.author }}" />
     <meta name="description" content="{{ site.description }}" />
     <title>{% page_title %}</title>
-    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+    {% css_asset_tag global %}[
+      /_assets/css/main.css
+    ]{% endcss_asset_tag %}
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/rss.xml"/>
   </head>
@@ -34,17 +36,8 @@
       </ul>
     </section>
 
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-11790423-1']);
-      _gaq.push(['_setDomainName', 'jonknapp.com']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+    {% javascript_asset_tag global %}[
+      /_assets/js/analytics.js
+    ]{% endjavascript_asset_tag %}
   </body>
 </html>
