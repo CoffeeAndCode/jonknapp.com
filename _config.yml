@@ -1,10 +1,4 @@
 auto: true
-asset_pipeline:
-  bundle: true
-  compress: true
-  output_path: assets
-  display_path: nil
-  gzip: false
 defaults:
   author: Jonathan Knapp
 description: "Hi, I'm Jon Knapp. I'm a web developer, digital consultant, community web advocate, and gamer."
