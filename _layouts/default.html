@@ -37,7 +37,12 @@
     </section>
 
     {% javascript_asset_tag global %}[
-      /_assets/js/analytics.js
+      /_vendor/zepto/zepto.min.js,
+      /_vendor/lodash/lodash.min.js,
+      /_vendor/backbone/backbone-min.js,
+      /_vendor/simply-deferred/deferred.min.js,
+      /_assets/js/analytics.js,
+      /_assets/js/main.js
     ]{% endjavascript_asset_tag %}
   </body>
 </html>
