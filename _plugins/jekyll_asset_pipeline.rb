@@ -53,7 +53,7 @@ module JekyllAssetPipeline
     end
 
     def convert
-      parser = Less::Parser.new :paths => ['_assets/css/'], :filename => 'style.less'
+      parser = Less::Parser.new :paths => ['_assets/css/', '_vendor/'], :filename => 'style.less'
       return parser.parse(@content).to_css
     end
   end
