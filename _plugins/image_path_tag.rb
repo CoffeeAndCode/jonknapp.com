@@ -19,7 +19,8 @@ module Jekyll
     def render(context)
       current_page = context.environments.first['page']
       post = context.registers[:site].posts.find { |x| x.url == current_page['url'] }
-      "<img alt=\"#{@alt}\" src=\"/images/#{current_page['date'].year}/#{post.slug}/#{@url}\" />"
+      url = context.registers[:site].config['url']
+      "<img alt=\"#{@alt}\" src=\"http://#{url}/images/#{current_page['date'].year}/#{post.slug}/#{@url}\" />"
     end
   end
 end
