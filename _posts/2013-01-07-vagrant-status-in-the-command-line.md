@@ -7,16 +7,17 @@ title: Vagrant Status in the Command Line
 
 I started using [Vagrant](http://www.vagrantup.com) on a client
 project and I love it. Vagrant will create a virtual machine
-that is ran using [VirtualBox](https://www.virtualbox.org),
-but it runs it headless. This means it's easy to forget if
-your server is still running or not at the end of the day.
+that is ran using a headless version of
+[VirtualBox](https://www.virtualbox.org). This means it's easy
+to forget if your server is still running or not at the
+end of the day.
 
 I was already using some [nifty code](https://gist.github.com/3170548)
-for outputting the status if git in my command line. I
-decided that adding the status of the Vagrant server
-would be exactly what I needed.
+for outputting the status of git in my command line, so I
+decided to try putting the status of my Vagrant server in the prompt
+as well.
 
-I'm not really good at bash but this worked for me:
+Here's what I came up with:
 
 {% gist 4478878 .profile %}
 
