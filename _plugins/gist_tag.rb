@@ -25,7 +25,7 @@ module Jekyll
 
     def html_output_for(script_url, code)
       code = CGI.escapeHTML code
-      "<script src='#{script_url}'></script><noscript><pre><code>#{code}</code></pre></noscript>"
+      "<script src='#{script_url}'></script><pre data-visible=\"false\"><code>#{code}</code></pre>"
     end
 
     def script_url_for(gist_id, filename)
