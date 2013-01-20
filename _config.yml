@@ -8,4 +8,5 @@ markdown: rdiscount
 paginate: 10
 permalink: /:year/:month/:title
 rdiscount extensions: [smart]
+title: "Hi, I'm Jon Knapp."
 url: jonknapp.com
