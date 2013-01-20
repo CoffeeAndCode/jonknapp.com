@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Hello Jekyll
+description: Enough! I yelled shaking my fist at the ceiling of the coffee
+  shop. My website is completely out of date and does a horrible job
+  representing my skills as a developer. 2013 is the year for change.
 ---
 
 **"Enough!"** I yelled shaking my fist at the ceiling of the coffee shop.

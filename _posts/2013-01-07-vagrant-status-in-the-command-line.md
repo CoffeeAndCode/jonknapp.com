@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Vagrant Status in the Command Line
+description: Show the status of your Vagrant server as part of your
+  command line prompt.
 ---
 
 *AKA:* **How to know if you left your Vagrant server on.**

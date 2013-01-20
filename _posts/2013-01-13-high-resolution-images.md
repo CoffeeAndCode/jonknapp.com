@@ -1,6 +1,11 @@
 ---
 layout: post
 title: High Resolution Images
+description: If your website serves images, you need to be able to
+  support displaying high resolution images. On retina devices normal
+  images will look a bit blurry since they now take up more pixels
+  than they would before. Learn how I use Backbone to load images
+  appropriate to the user's device resolution.
 ---
 
 If your website serves images, you need to be able to support
