@@ -1,4 +1,4 @@
-auto: true
+auto: false
 defaults:
   author: Jonathan Knapp
 description: "Hi, I'm Jon Knapp. I'm a web developer, digital consultant, community web advocate, and gamer."

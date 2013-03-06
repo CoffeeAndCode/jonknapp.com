@@ -1,9 +1,9 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
 
 gem "closure-compiler"
 gem "jekyll"
 gem "jekyll-asset-pipeline"
-gem "jekyll-s3"
+gem "jekyll-s3", "~>2.4"
 gem "less"
 gem "rdiscount"
 gem "therubyracer"
