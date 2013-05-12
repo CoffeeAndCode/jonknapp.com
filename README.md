@@ -25,6 +25,12 @@ the project.
 You can now build the website by running `jekyll`, or create a local webserver with `jekyll --server`.
 
 
+## Deployment
+
+The site is deployed using [jekyll-s3](https://github.com/laurilehmijoki/jekyll-s3)
+by running the command `jekyll-s3` from the command line.
+
+
 ## License
 
 <a rel="license" href="http://opensource.org/licenses/MIT">
