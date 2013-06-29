@@ -10,7 +10,7 @@ module Jekyll
       if current_page['id']
         "#{current_page['title']} by #{author}"
       else
-        "#{author}"
+        "#{current_page['title']} &bull; jonknapp.com" || "#{author}"
       end
     end
   end
