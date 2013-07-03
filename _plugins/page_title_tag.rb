@@ -9,8 +9,10 @@ module Jekyll
       author = current_page['author'] || context.registers[:site].config['defaults']['author']
       if current_page['id']
         "#{current_page['title']} by #{author}"
+      elsif current_page['title']
+        "#{current_page['title']} &bull; jonknapp.com"
       else
-        "#{current_page['title']} &bull; jonknapp.com" || "#{author}"
+        "#{author}"
       end
     end
   end
