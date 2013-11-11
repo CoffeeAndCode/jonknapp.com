@@ -5,6 +5,15 @@ description: An Alfred plugin and code necessary to switch your active HipChat
   account on a Mac without logging out and back in every time.
 ---
 
+**Update:** Seems that this method doesn't play as nice since Mavericks and cloud
+keychains came into existance. Worst case, the `switch` command won't do
+anything and it just logs you into the previous account you used with the
+HipChat client.
+
+Balls back in your court HipChat.
+
+---
+
 I love [HipChat](https://www.hipchat.com/) for team communication. I've used it
 for several different projects, which has led me to a bit of a conundrum.
 The main service [does not allow you to manage multiple accounts](http://help.hipchat.com/knowledgebase/articles/64418)
