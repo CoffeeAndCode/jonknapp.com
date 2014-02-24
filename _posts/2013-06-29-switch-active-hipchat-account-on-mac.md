@@ -12,6 +12,9 @@ HipChat client.
 
 Balls back in your court HipChat.
 
+**Update 2:** Thanks to an amazing heads up by Tony Eichelberger in the comments,
+I know have plist editing working on Mavericks. I updated the post accordingly.
+
 ---
 
 I love [HipChat](https://www.hipchat.com/) for team communication. I've used it
@@ -98,3 +101,15 @@ so our options are to add a `sleep` call in the bash script, or only switch acco
 after HipChat has been closed for a few seconds. My workflow chose the later.
 
 Hopefully this can be of use to people until HipChat can get multiple accounts working.
+
+Full Bash script from the worfflow here:
+
+    # close HipChat so we can change accounts
+    osascript -e "quit application \"HipChat\""
+
+    # change email to value passed to Alfred
+    /usr/bin/defaults write ~/Library/Preferences/com.hipchat.HipChat.plist account_email {query}
+    /usr/bin/defaults write ~/Library/Preferences/com.hipchat.HipChat.plist signInEmail {query}
+
+    # open up HipChat
+    open /Applications/HipChat.app
