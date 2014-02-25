@@ -87,6 +87,13 @@ Digging around a bit more, I found how to edit plist configs from the command li
     /usr/libexec/PlistBuddy -c "Set :account_email EMAIL" ~/Library/Preferences/com.hipchat.HipChat.plist
     /usr/libexec/PlistBuddy -c "Set :signInEmail EMAIL" ~/Library/Preferences/com.hipchat.HipChat.plist
 
+I have recently updated the Alfred workflow to use the `defaults` command, which
+works on OSX Mavericks unlike `PlistBuddy` (at least in this example). Thanks
+again Tony Eichelberger!
+
+    /usr/bin/defaults write ~/Library/Preferences/com.hipchat.HipChat.plist account_email EMAIL
+    /usr/bin/defaults write ~/Library/Preferences/com.hipchat.HipChat.plist signInEmail EMAIL
+
 
 ### Success
 
