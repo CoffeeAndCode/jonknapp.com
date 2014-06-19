@@ -1,3 +1,2 @@
-_cache/
-_site/
-_jekyll_s3.yml
+/bower_components/
+/www/
