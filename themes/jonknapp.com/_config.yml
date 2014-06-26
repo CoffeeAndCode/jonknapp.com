@@ -1,0 +1,18 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+feedburner: http://feeds.feedburner.com/jonknapp-com
+rss: /rss.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.ico
+twitter: coffeeandcode
+google_plus:
+fb_admins:
+fb_app_id:

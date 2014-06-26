@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="<%= config.author %>">
+    <meta name="description" content="<%= page.description || config.description %>">
+    <%
+    var title = config.title;
+    if (page.title) {
+      title = page.title + ' by ' + config.author;
+    }
+    %>
+    <title><%= title %></title>
+    <%- css('css/style') %>
+    <link rel="icon" href="<%= theme.favicon %>">
+    <link rel="alternative" href="<%= theme.rss %>" title="Blog RSS" type="application/rss+xml">
+    <link rel="canonical" href="<%= page.permalink || config.url %>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- open_graph({
+      google_plus: theme.google_plus,
+      fb_admins: theme.fb_admins,
+      fb_app_id: theme.fb_app_id,
+      twitter_id: theme.twitter
+    }) %>
+    <%- partial('google-analytics') %>
+  </head>

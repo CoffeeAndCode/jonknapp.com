@@ -1,0 +1,31 @@
+article {
+  > header > h1,
+  > header > h2 {
+    margin: 0;
+  }
+
+  > header > time {
+    color: #D0D3D4;
+    display: block;
+    font-size: 0.8em;
+    margin-top: -5px;
+  }
+
+  > footer {
+    .grayscale(100%);
+    border-top: 1px solid #eee;
+    font-size: 0.7em;
+    margin-top: 60px;
+    opacity: 0.5;
+  }
+
+  > footer:hover {
+    .grayscale(0%);
+    opacity: 1;
+  }
+
+  > footer p {
+    line-height: 1.4em;
+    margin: 0.5em 0;
+  }
+}

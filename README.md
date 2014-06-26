@@ -1,34 +1,43 @@
 # The Officially Official Website of Jonathan Knapp
 
-This project uses [Jekyll](http://jekyllrb.com) to create a static
+This project uses [Hexo](http://hexo.io/) to create a static
 website which uses [Markdown](http://daringfireball.net/projects/markdown) syntax
 to create the content.
 
 
 ## Development
 
-First, install [RVM](https://rvm.io) on your machine. This allows you to
-sandbox the version of Ruby and gems (libraries) so they do not clash with
-other projects. It's good stuff.
+Install [Node](http://nodejs.org/), then install [Grunt](http://gruntjs.com/getting-started)
+and [Bower](http://bower.io/) globally.
 
-Second, change out of the project directory and back into it. You should be
-presented with a prompt from RVM that asks for access to the `.rvmrc` file.
-The file will make sure Ruby v1.9.3 is used and gems are sandboxed to a
-`jonknapp.com` gemset.
+You can then install dependencies and prepare the theme with:
 
-Third, if [Bundler](http://gembundler.com) is not installed, run
-`gem install bundler` from the command line.
+```shell
+npm install
+cd themes/jonknapp.com
+npm install
+bower install
+grunt
+```
 
-Lastly, run `bundle install` to download and install any gems necessary for
-the project.
+From the root directory, run `hexo server` to start a local version of the website.
+You can also run `hexo generate` to build a static version of the site in the
+`public/` folder.
 
-You can now build the website by running `jekyll`, or create a local webserver with `jekyll --server`.
 
+### S3 Deployment
 
-## Deployment
+To deploy to S3, create a file called `aws.json` that has the following structure:
 
-The site is deployed using [jekyll-s3](https://github.com/laurilehmijoki/jekyll-s3)
-by running the command `jekyll-s3` from the command line.
+```json
+{
+  "bucket": "jonknapp.com",
+  "key": "AWS-KEY",
+  "secret": "AWS-SECRET"
+}
+```
+
+You can now deploy the generated site with `grunt`.
 
 
 ## License

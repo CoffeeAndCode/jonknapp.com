@@ -1,0 +1,23 @@
+<%- partial('_partial/head') %>
+<body>
+  <%- partial('_partial/header') %>
+
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <section class="col-md-9" role="main">
+        <div class="content">
+          <%- body %>
+        </div>
+      </section>
+
+      <%- partial('_partial/sidebar', null, {cache: true}) %>
+    </div>
+  </div>
+  <%- js([
+    'js/vendor.js',
+    'js/analytics.js',
+    'js/views/image.js',
+    'js/main.js'
+  ]) %>
+</body>
+</html>

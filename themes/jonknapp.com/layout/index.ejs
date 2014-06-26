@@ -1,0 +1,17 @@
+<h1>Hi, I'm Jon Knapp.</h1>
+
+<p>I'm a <a href="https://github.com/coffeeandcode">web developer</a>,
+  <a href="http://coffeeandcode.com">digital consultant</a>,
+  <a href="http://www.meetup.com/akroncantonweb">community web advocate</a>,
+  and <a href="https://live.xbox.com/en-US/Profile?GamerTag=CoffeeAndCode">gamer</a>.</p>
+
+<div class="posts">
+<% page.posts.each(function(post, i) { %>
+  <article>
+    <header>
+      <h2><a href="/<%= post.path %>"><%= post.title %></a></h2>
+      <time><%= post.date.format('MMMM YYYY') %></time>
+    </header>
+  </article>
+<% }) %>
+</div>
