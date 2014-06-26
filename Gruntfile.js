@@ -2,6 +2,9 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     aws: grunt.file.readJSON('aws.json'),
+
+    clean: ['public'],
+
     s3: {
       options: {
         key: '<%= aws.key %>',
@@ -56,10 +59,25 @@ module.exports = function(grunt) {
           }
         }]
       }
+    },
+
+    shell: {
+      generate: {
+        command: 'hexo generate'
+      },
+
+      server: {
+        command: 'hexo server'
+      }
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-s3');
+  grunt.loadNpmTasks('grunt-shell');
 
-  grunt.registerTask('default', ['s3']);
+  grunt.registerTask('generate', ['clean', 'shell:generate']);
+  grunt.registerTask('server', ['shell:server']);
+  grunt.registerTask('deploy', ['generate', 's3']);
+  grunt.registerTask('default', ['server']);
 };

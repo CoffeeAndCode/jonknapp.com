@@ -20,8 +20,8 @@ bower install
 grunt
 ```
 
-From the root directory, run `hexo server` to start a local version of the website.
-You can also run `hexo generate` to build a static version of the site in the
+From the root directory, run `grunt` to start a local version of the website.
+You can also run `grunt generate` to build a static version of the site in the
 `public/` folder.
 
 
@@ -37,7 +37,8 @@ To deploy to S3, create a file called `aws.json` that has the following structur
 }
 ```
 
-You can now deploy the generated site with `grunt`.
+You can now deploy the generated site with `grunt deploy`. It will automatically
+re-generate a copy of the site before deploying.
 
 
 ## License
